@@ -1,0 +1,171 @@
+/*@import 'reset';*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  background: #fff;
+}
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+  header a {
+    box-sizing: border-box;
+    width: 25%;
+    display: inline-block;
+    margin-left: -3px;
+    text-align: center;
+    padding: 12px;
+  }
+
+    header a:hover .fa-heart-o {
+      color: red;
+    }
+
+    header a .fa {
+      color: #454545;
+      font-size: 25px;
+    }
+
+.container {
+  background: #fafafa;
+  padding-top: 50px;
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  bottom: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+  .container .card {
+    background: white;
+    margin: 0 auto;
+    width: 550px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    overflow: auto;
+  }
+
+    .container .card .card-header {
+      padding: 15px;
+    }
+
+      .container .card .card-header .profile-img {
+        display: inline-block;
+        background: red;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        position: relative;
+        top: 3px;
+        margin-right: 5px;
+      }
+
+      .container .card .card-header .profile-info {
+        display: inline-block;
+      }
+
+        .container .card .card-header .profile-info .name {
+          font-size: 14px;
+          color: #262626;
+          font-weight: 700;
+        }
+
+      .container .card .card-header .location {
+        font-size: 12px;
+        color: #262626;
+      }
+
+      .container .card .card-header .time {
+        font-size: 10px;
+        float: right;
+        display: inline-block;
+        top: 10px;
+        position: relative;
+      }
+
+    .container .card .content img {
+      width: 100%;
+    }
+
+    .container .card .card-footer {
+      padding: 15px;
+      box-sizing: border-box;
+    }
+
+      .container .card .card-footer .likes {
+        color: #262626;
+        font-size: 12px;
+        padding-bottom: 10px;
+      }
+
+      .container .card .card-footer .description p {
+        font-size: 14px;
+        margin: 0;
+        padding: 0 0 5px 0;
+      }
+
+      .container .card .card-footer .description .username {
+        font-weight: 700;
+      }
+
+      .container .card .card-footer .comments p {
+        font-size: 14px;
+        margin: 0;
+        padding: 0 0 5px 0;
+      }
+
+      .container .card .card-footer .comments .username {
+        font-weight: 700;
+      }
+
+      .container .card .card-footer hr {
+        padding: 0;
+      }
+
+      .container .card .card-footer form {
+        padding-top: 15px;
+      }
+
+        .container .card .card-footer form .fa {
+          font-size: 24px;
+        }
+
+        .container .card .card-footer form .heart {
+          display: inline-block;
+          width: 7%;
+        }
+
+          .container .card .card-footer form .heart .fa {
+            position: relative;
+            top: 3px;
+          }
+
+        .container .card .card-footer form .add-comment {
+          display: inline-block;
+          width: 70%;
+        }
+
+          .container .card .card-footer form .add-comment input {
+            width: 100%;
+            padding: 5px;
+            font-weight: 16px;
+            border: 0px solid #fff;
+          }
+
+        .container .card .card-footer form .options {
+          display: inline-block;
+          width: 7%;
+          float: right;
+        }
+
+          .container .card .card-footer form .options .fa {
+            position: relative;
+            top: 3px;
+          }
