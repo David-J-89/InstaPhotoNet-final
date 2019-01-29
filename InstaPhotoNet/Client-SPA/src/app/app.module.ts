@@ -35,6 +35,8 @@ import { PostService } from './_services/post.service';
 import { PhotoListComponent } from './users/photo-list/photo-list.component';
 import { LoginComponent } from './login/login.component';
 import { NavtestComponent } from './navtest/navtest.component';
+import { UserDetail02Component } from './users/user-detail02/user-detail02.component';
+import { UserEdit02Component } from './users/user-edit02/user-edit02.component';
 
 
 export function tokenGetter() {
@@ -57,7 +59,9 @@ export function tokenGetter() {
     PhotoEditorComponent,
     PhotoListComponent,
     LoginComponent,
-    NavtestComponent,   
+    NavtestComponent,
+    UserDetail02Component,
+    UserEdit02Component,   
     
   ],
   imports: [

@@ -47,7 +47,7 @@ header {
   background: #fafafa;
   padding-top: 82px;
   position: absolute;
-  width: 99%;
+  width: 97%;
   top: 50px;
   bottom: 0;
   font-family: 'Open Sans', sans-serif;
@@ -201,7 +201,7 @@ header {
   .container .profile {
     margin: 0 auto;
     width: 930px;
-    height: 200px;
+    height: 280px;
     /*border: 1px solid #e6e6e6;
 border-radius: 2px;*/
     overflow: auto;
@@ -209,13 +209,12 @@ border-radius: 2px;*/
 
     .container .profile .profile-header .profile-img {
       display: inline-block;
-      background: red;
-      height: 150px;
-      width: 150px;
+      height: 180px;
+      width: 180px;
       border-radius: 50%;
-      position: relative;
+      /*position: relative;
       top: 3px;
-      margin-right: 5px;
+      margin-right: 5px;*/
     }
 
 .profile .profile-header {
@@ -230,6 +229,10 @@ border-radius: 2px;*/
 .container .profile .profile-header .profheadcont {
   padding-left: 250px;
   margin-top: -120px;
+}
+
+.container .profile .profile-header .profbiodiv {
+  padding: 40px;
 }
 
   .container .profile .profile-header .profheadcont .profthead {

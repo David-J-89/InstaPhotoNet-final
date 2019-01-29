@@ -11,6 +11,7 @@ import { UserEditComponent } from './users/user-edit/user-edit.component';
 import { UserEditResolver } from './_resolvers/user-edit.resolver';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoListComponent } from './users/photo-list/photo-list.component';
+import { UserDetail02Component } from './users/user-detail02/user-detail02.component';
 
 
 export const appRoutes: Routes = [
@@ -25,7 +26,7 @@ export const appRoutes: Routes = [
         resolve: { users: UserListResolver }
       },
       {
-        path: 'users/:id', component: UserDetailComponent,
+        path: 'users/:id', component: UserDetail02Component,
         resolve: { user: UserDetailResolver }
       },
       {
