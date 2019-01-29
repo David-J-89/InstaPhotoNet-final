@@ -1,9 +1,9 @@
 <div class="container mt-4">
   <div class="row">
     <div class="col-sm-4">
-      <h1>Your Profile</h1>
+      <h1>Edit Your Profile</h1>
     </div>
-    <button class="btn btn-secondary" (click)="logout()">Logout</button>
+    
     <div class="col-sm-8">
       <div *ngIf="editForm.dirty" class="alert alert-info">
         <strong>Information:</strong> You have made changes. Any unsaved changes will be lost!
@@ -38,13 +38,7 @@
             <form #editForm="ngForm" id="editForm" (ngSubmit)="updateUser()">
               <h4>Description</h4>
               <textarea name="bio" rows="6" class="form-control"
-                        [(ngModel)]="user.bio"></textarea>
-              <!--<h4>Looking For</h4>
-              <textarea name="lookingFor" rows="6" class="form-control"
-                        [(ngModel)]="user.lookingFor"></textarea>
-              <h4>Interests</h4>
-              <textarea name="interests" rows="6" class="form-control"
-                        [(ngModel)]="user.interests"></textarea>-->
+                        [(ngModel)]="user.bio"></textarea>             
               <h4>Location Details:</h4>
               <div class="form-inline">
                 <label for="city">City</label>

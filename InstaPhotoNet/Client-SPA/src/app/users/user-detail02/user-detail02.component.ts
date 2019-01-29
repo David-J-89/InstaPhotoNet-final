@@ -3,7 +3,7 @@ import { User } from '../../_models/user';
 import { UserService } from '../../_services/user.service';
 import { AlertifyService } from '../../_services/alertify.service';
 import { AuthService } from '../../_services/auth.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-detail02',
@@ -14,13 +14,15 @@ export class UserDetail02Component implements OnInit {
   user: User;  
   userImages: string[];
   
+  
 
   constructor(private userService: UserService, private alertify: AlertifyService,
-    private route: ActivatedRoute, private authService: AuthService) { }
+    private route: ActivatedRoute, private authService: AuthService, private router: Router) { }
 
   ngOnInit() {
     this.route.data.subscribe(data => {
       this.user = data['user'];
+      
     });
 
     this.userImages = this.getImages();
@@ -40,6 +42,15 @@ export class UserDetail02Component implements OnInit {
 
     return imageUrls;
 
+  }
+
+  logout() {
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    this.authService.decodedToken = null;
+    this.authService.currentUser = null;
+    this.alertify.message('Logged out');
+    this.router.navigate(['/home']);
   }
 
   sendLike(id: number) {

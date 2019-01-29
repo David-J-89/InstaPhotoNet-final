@@ -12,6 +12,7 @@ import { UserEditResolver } from './_resolvers/user-edit.resolver';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoListComponent } from './users/photo-list/photo-list.component';
 import { UserDetail02Component } from './users/user-detail02/user-detail02.component';
+import { UserEdit02Component } from './users/user-edit02/user-edit02.component';
 
 
 export const appRoutes: Routes = [
@@ -30,7 +31,7 @@ export const appRoutes: Routes = [
         resolve: { user: UserDetailResolver }
       },
       {
-        path: 'user/edit', component: UserEditComponent,
+        path: 'user/edit', component: UserEdit02Component,
         resolve: { user: UserEditResolver }, canDeactivate: [PreventUnsavedChanges]
       },
       { path: 'messages', component: MessagesComponent },

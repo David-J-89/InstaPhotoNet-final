@@ -9,6 +9,7 @@
           <tr class="proftoptr">
             <th class="username">{{user.KnownAs}}</th>
             <th class="editbutton" [routerLink]="['/user/edit']"><button>Edit Profile</button></th>
+            <th class="editbutton" (click)="logout()"><button>Logout</button></th>
             <th class="cog"><button><i class="fa fa-cog"></i></button></th>
           </tr>
         </thead>
