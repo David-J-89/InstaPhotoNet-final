@@ -1,77 +1,66 @@
-<!--<div class="container mt-5">
-  <div class="row">
-    <div class="col-sm-6">
-      <p *ngFor="let photo of photos"><img  src="photo.url" />photo.id</p>
-      <app-photo-card [photo]="photo"></app-photo-card>
+
+<section class="container">
+  <div class="spacer">
+    <div class="card">
+      <div *ngFor="let photo of photos">
+        <div class="card-header">
+          <div>
+            <img class="profile-img" src="{{photo.userPhotoUrl}}" />
+          </div>
+          <div class="profile-info">
+            <div class="name">
+            </div>
+
+            <div class="list-inline-item">
+              <button class="btn btn-primary"
+                      [routerLink]="['/users', photo.userId]">
+                <i class="fa fa-user"></i>
+              </button>
+            </div>
+
+          </div>
+          <div class="time">
+            1hr
+          </div>
+        </div>
+
+        <div class="content">
+          <img src="{{photo.url}}" />
+        </div>
+        <div class="card-footer">
+          <div class="likes">
+            21 likes
+          </div>
+          <div class="description">
+            <p>
+              <span class="username">"{{photo.description}}"</span> Hey just out here in miami!
+            </p>
+          </div>
+          <div class="comments" *ngFor="let comment of Comments">
+            <p>
+              <span class="username">bobby234</span> "{{comment.body}}"
+            </p>
+            <p>
+              <span class="username">melind98</span> "{{comment.body}}"
+            </p>
+          </div>
+          <hr />
+          <form>
+            <div class="heart">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+            </div>
+            <div class="add-comment">
+              <input type="text" placeholder="Add a comment..." />
+            </div>
+            <div class="options">
+              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
-</div>-->
-<!--<div class="container mt-5">
-  <div class="row">
-    <div class="col-sm-6">-->
-<section class="container">
-  <div class="card">
-    <div *ngFor="let photo of photos">
-      <div class="card-header">
-        <div class="profile-img" >
-        </div>
-        <div>
-          <img src="{{photo.userPhotoUrl}}" />
-        </div>
-        <div class="profile-info">
-          <div class="name">
-
-
-          </div>
-          <li class="list-inline-item">
-            <button class="btn btn-primary"
-                    [routerLink]="['/users', photo.userId]">
-              <i class="fa fa-user"></i>
-            </button>
-          </li>
-        </div>
-        <div class="time">
-          1hr
-        </div>
-      </div>
-
-      <div class="content">
-        <img src="{{photo.url}}" />
-      </div>
-      <div class="card-footer">
-        <div class="likes">
-          21 likes
-        </div>
-        <div class="description">
-          <p>
-            <span class="username">"{{photo.description}}"</span> Hey just out here in miami!
-          </p>
-        </div>
-        <div class="comments" *ngFor="let comment of Comments">
-          <p>
-            <span class="username">bobby234</span> "{{comment.body}}"
-          </p>
-          <p>
-            <span class="username">melind98</span> "{{comment.body}}"
-          </p>
-        </div>
-        <hr />
-        <form>
-          <div class="heart">
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
-          </div>
-          <div class="add-comment">
-            <input type="text" placeholder="Add a comment..." />
-          </div>
-          <div class="options">
-            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-          </div>
-        </form>
-      </div>
-      </div>
-    <br />
-    </div>
 </section>
-<!--</div>
-    </div>
-</div>-->
+
+
+

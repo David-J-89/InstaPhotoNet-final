@@ -32,7 +32,6 @@ import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { UserEditResolver } from './_resolvers/user-edit.resolver';
 import { PhotoEditorComponent } from './users/photo-editor/photo-editor.component';
 import { PostService } from './_services/post.service';
-import { PhotoCardComponent } from './users/photo-card/photo-card.component';
 import { PhotoListComponent } from './users/photo-list/photo-list.component';
 import { LoginComponent } from './login/login.component';
 import { NavtestComponent } from './navtest/navtest.component';
@@ -54,8 +53,7 @@ export function tokenGetter() {
     UserCardComponent,
     UserDetailComponent,
     UserEditComponent,
-    UserListComponent,
-    PhotoCardComponent,
+    UserListComponent,   
     PhotoEditorComponent,
     PhotoListComponent,
     LoginComponent,

@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+/*@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';*/
 
 @import '../node_modules/font-awesome/css/font-awesome.min.css';
 @import '../node_modules/alertifyjs/build/css/alertify.min.css';
@@ -42,6 +42,7 @@ header {
       font-size: 25px;
     }
 
+
 .container {
   background: #fafafa;
   padding-top: 82px;
@@ -50,6 +51,7 @@ header {
   top: 50px;
   bottom: 0;
   font-family: 'Open Sans', sans-serif;
+  padding: 16px;
 }
 
   .container .card {
@@ -58,7 +60,7 @@ header {
     width: 600px;
     border: 1px solid #e6e6e6;
     border-radius: 2px;
-    overflow: auto;
+    overflow: auto;    
   }
 
     .container .card .card-header {
@@ -67,7 +69,6 @@ header {
 
       .container .card .card-header .profile-img {
         display: inline-block;
-        background: lightcoral;
         height: 30px;
         width: 30px;
         border-radius: 50%;

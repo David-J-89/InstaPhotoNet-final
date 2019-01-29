@@ -19,7 +19,7 @@ export class PhotoListComponent implements OnInit {
 
   ngOnInit() {
     this.loadPosts();
-    
+
   }
 
   loadPosts() {
@@ -30,6 +30,5 @@ export class PhotoListComponent implements OnInit {
     });
   }
 
-  
-}
 
+}
