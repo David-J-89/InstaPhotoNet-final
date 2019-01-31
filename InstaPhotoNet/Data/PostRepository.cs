@@ -62,11 +62,7 @@ namespace InstaPhotoNet.Data
             return photosic;
         }
 
-        //public Task<IQueryable<Photo>> GetPhotosIncludingComments()
-        //{
-        //    throw new System.NotImplementedException();
-        //}
-
+        
         public async Task<Photo> GetProfilePhotoForUser(int userId)
         {
             return await _context.Photos.Where(u => u.UserId == userId)

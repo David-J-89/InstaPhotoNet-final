@@ -1,66 +1,105 @@
 
-<section class="container">
-  <div class="spacer">
-    <div class="card">
-      <div *ngFor="let photo of photos">
-        <div class="card-header">
-          <div>
-            <img class="profile-img" src="{{photo.userPhotoUrl}}" />
-          </div>
-          <div class="profile-info">
-            <div class="name">
-            </div>
 
-            <div class="list-inline-item">
-              <button class="btn btn-primary"
-                      [routerLink]="['/users', photo.userId]">
-                <i class="fa fa-user"></i>
-              </button>
-            </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="mx-auto">
+          <div class="card">
+            <div *ngFor="let photo of photos">
+              <div class="card-header">
 
-          </div>
-          <div class="time">
-            1hr
+                <div>
+                  <img class="profile-img" [routerLink]="['/users', photo.userId]" src="{{photo.userPhotoUrl}}" /><div class="profile-info">
+
+                    <div class="name">
+                      <a [routerLink]="['/users', photo.userId]">
+                        {{photo.userKnownAs}}
+                      </a>
+
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="time">
+
+                </div>
+
+              </div>
+
+              <div class="content">
+                <img src="{{photo.url}}" />
+              </div>
+              <div class="card-footer">
+                <div class="likes">
+                  21 likes
+                </div>
+                <div class="description">
+                  <p>
+                    <span class="username">"{{photo.description}}"</span> Hey just out here in miami!
+                  </p>
+                </div>
+                <div class="comments" *ngFor="let comment of Comments">
+                  <p>
+                    <span class="username">bobby234</span> "{{comment.body}}"
+                  </p>
+                  <p>
+                    <span class="username">melind98</span> "{{comment.body}}"
+                  </p>
+                </div>
+                <hr />
+                <form>
+                  <div class="heart">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                  </div>
+                  <div class="add-comment">
+                    <input type="text" placeholder="Add a comment..." />
+                  </div>
+                  <div class="options">
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="content">
-          <img src="{{photo.url}}" />
+        <!--<div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" alt="Bootstrap Thumbnail Second" src="https://www.layoutit.com/img/city-q-c-600-200-1.jpg">
+            <div class="card-block">
+              <h5 class="card-title">
+                Card title
+              </h5>
+              <p class="card-text">
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+              </p>
+              <p>
+                <a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="card-footer">
-          <div class="likes">
-            21 likes
-          </div>
-          <div class="description">
-            <p>
-              <span class="username">"{{photo.description}}"</span> Hey just out here in miami!
-            </p>
-          </div>
-          <div class="comments" *ngFor="let comment of Comments">
-            <p>
-              <span class="username">bobby234</span> "{{comment.body}}"
-            </p>
-            <p>
-              <span class="username">melind98</span> "{{comment.body}}"
-            </p>
-          </div>
-          <hr />
-          <form>
-            <div class="heart">
-              <i class="fa fa-heart-o" aria-hidden="true"></i>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" alt="Bootstrap Thumbnail Third" src="https://www.layoutit.com/img/sports-q-c-600-200-1.jpg">
+            <div class="card-block">
+              <h5 class="card-title">
+                Card title
+              </h5>
+              <p class="card-text">
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+              </p>
+              <p>
+                <a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+              </p>
             </div>
-            <div class="add-comment">
-              <input type="text" placeholder="Add a comment..." />
-            </div>
-            <div class="options">
-              <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-            </div>
-          </form>
-        </div>
+          </div>
+        </div>-->
       </div>
     </div>
   </div>
-</section>
+</div>
 
-
-
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>

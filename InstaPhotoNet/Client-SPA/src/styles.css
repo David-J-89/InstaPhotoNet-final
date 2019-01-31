@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-/*@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';*/
-
+/*@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/bootswatch/dist/pulse/bootstrap.min.css';*/
 @import '../node_modules/font-awesome/css/font-awesome.min.css';
 @import '../node_modules/alertifyjs/build/css/alertify.min.css';
 @import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
@@ -22,6 +22,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 20;
+  
 }
 
   header a {
@@ -43,7 +44,7 @@ header {
     }
 
 
-.container {
+/*.container {
   background: #fafafa;
   padding-top: 82px;
   position: absolute;
@@ -195,38 +196,38 @@ header {
         .container .card .card-footer form .options .fa {
           position: relative;
           top: 3px;
-        }
+        }*/
 
 
-  .container .profile {
+  /*.container .profile {
     margin: 0 auto;
     width: 930px;
     height: 280px;
     /*border: 1px solid #e6e6e6;
 border-radius: 2px;*/
-    overflow: auto;
-  }
+   /* overflow: auto;
+  }*/
 
-    .container .profile .profile-header .profile-img {
+    /*.container .profile .profile-header .profile-img {
       display: inline-block;
       height: 180px;
       width: 180px;
-      border-radius: 50%;
+      border-radius: 50%;*/
       /*position: relative;
       top: 3px;
-      margin-right: 5px;*/
+      margin-right: 5px;
     }
 
-.profile .profile-header {
+/*.profile .profile-header {
   padding-left: 40px;
-}
+}*/
 
 /*.container .profile .profile-header .profile-top .name{
     padding-left: 200px;
     margin-top: -120px;
 }*/
 
-.container .profile .profile-header .profheadcont {
+/*.container .profile .profile-header .profheadcont {
   padding-left: 250px;
   margin-top: -120px;
 }
@@ -265,18 +266,22 @@ border-radius: 2px;*/
 .container .hr2 {
   margin: 0 auto;
   width: 930px;
-}
+}*/
 
-.container .photodiv {
+/*.container .photodiv {
   /*margin-left: 492px;
-    margin-right: auto;*/
+    margin-right: auto;
   margin: 0 auto;
   width: 930px;
   /*height: 200px;*/
   /*border: 1px solid #e6e6e6;
-    border-radius: 2px;*/
+    border-radius: 2px;
   overflow: auto;
 }
+
+.container .sidebuttons {
+  float: right;
+}*/
 
 
 

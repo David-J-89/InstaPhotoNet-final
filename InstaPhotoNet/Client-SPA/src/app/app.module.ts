@@ -37,6 +37,11 @@ import { LoginComponent } from './login/login.component';
 import { NavtestComponent } from './navtest/navtest.component';
 import { UserDetail02Component } from './users/user-detail02/user-detail02.component';
 import { UserEdit02Component } from './users/user-edit02/user-edit02.component';
+import { NavbootComponent } from './maintest/navboot/navboot.component';
+import { PhotoEditorbootComponent } from './maintest/photo-editorboot/photo-editorboot.component';
+import { PhotoUserdetailbootComponent } from './maintest/photo-userdetailboot/photo-userdetailboot.component';
+import { PhotoUsereditbootComponent } from './maintest/photo-usereditboot/photo-usereditboot.component';
+
 
 
 export function tokenGetter() {
@@ -61,7 +66,12 @@ export function tokenGetter() {
     LoginComponent,
     NavtestComponent,
     UserDetail02Component,
-    UserEdit02Component,   
+    UserEdit02Component,
+    NavbootComponent,
+    PhotoEditorbootComponent,
+    PhotoUserdetailbootComponent,
+    PhotoUsereditbootComponent,
+      
     
   ],
   imports: [

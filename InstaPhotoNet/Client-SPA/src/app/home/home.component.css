@@ -1,0 +1,23 @@
+@import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../../../node_modules/bootswatch/dist/pulse/bootstrap.min.css';
+
+.container-fluid {
+  padding-top: 120px;
+}
+
+  .container-fluid .row {
+    
+  }
+
+    .container-fluid .row .col-md-12 {
+      
+    }
+
+      .container-fluid .row .col-md-12 .row {
+        
+      }
+
+        .container-fluid .row .col-md-12 .row .mx-auto .card {
+          width: 600px;
+          height: 400px;
+        }

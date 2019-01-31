@@ -13,6 +13,9 @@ import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoListComponent } from './users/photo-list/photo-list.component';
 import { UserDetail02Component } from './users/user-detail02/user-detail02.component';
 import { UserEdit02Component } from './users/user-edit02/user-edit02.component';
+import { PhotoUserdetailbootComponent } from './maintest/photo-userdetailboot/photo-userdetailboot.component';
+import { PhotoUsereditbootComponent } from './maintest/photo-usereditboot/photo-usereditboot.component';
+
 
 
 export const appRoutes: Routes = [
@@ -36,7 +39,17 @@ export const appRoutes: Routes = [
       },
       { path: 'messages', component: MessagesComponent },
       { path: 'lists', component: ListsComponent },
-      { path: 'posts', component: PhotoListComponent }
+      { path: 'posts', component: PhotoListComponent },      
+      {
+        path: 'usersboot/:id', component: PhotoUserdetailbootComponent
+      },
+        //resolve: { user: UserDetailResolver}},
+      {
+        path: 'userboot/edit', component: PhotoUsereditbootComponent,
+        //resolve: { user: UserEditResolver }, canDeactivate: [PreventUnsavedChanges]
+      },
+
+      
     ]
   },
   { path: '**', redirectTo: '', pathMatch: 'full' },

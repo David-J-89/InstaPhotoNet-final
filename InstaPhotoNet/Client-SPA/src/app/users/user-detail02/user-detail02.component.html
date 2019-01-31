@@ -1,59 +1,93 @@
-<section class="container">
-  <div class="profile">
-    <div class="profile-header">
-      <div>
-        <img class="profile-img" src="{{user.photoUrl}}" />
-      </div>
-      <table class="profheadcont">
-        <thead class="profthead">
-          <tr class="proftoptr">
-            <th class="username">{{user.KnownAs}}</th>
-            <th class="editbutton" [routerLink]="['/user/edit']"><button>Edit Profile</button></th>
-            <th class="editbutton" (click)="logout()"><button>Logout</button></th>
-            <th class="cog"><button><i class="fa fa-cog"></i></button></th>
-          </tr>
-        </thead>
-        <tbody class="profinfo">
-          <tr class="profmidtr">
-            <td>627 posts</td>
-            <td>133 followers</td>
-            <td>405 following</td>
-          </tr>
-          <tr class="profnametr">
-            <td>{{user.username}}</td>
-          </tr>          
-        </tbody>        
-      </table>
-      <div class="profbiodiv">
-        
-          <p>{{user.bio}}</p>
-        
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row">
+
+        <div class="mx-auto">
+          <!--<div class="card">-->
+            <div class="profile">
+              <div>
+                <img class="profile-img" src="{{user.photoUrl}}" />
+              </div>
+              <div class="profile-header">
+
+                <table class="profheadcont">
+                  <thead class="profthead">
+                    <tr class="proftoptr">
+                      <th class="username">{{user.knownAs}}</th>
+                      <!--<th class="editbutton" [routerLink]="['/user/edit']"><button>Edit Profile</button></th>-->
+                      <th><button type="button" class="btn btn-outline-secondary">Logout</button></th>
+                      <th (click)="logout()"><button type="button" class="btn btn-outline-secondary"><i class="fa fa-cog"></i></button></th>
+                      <!--<th class="editbutton" (click)="logout()"><button>Logout</button></th>
+                      <th class="cog"><button><i class="fa fa-cog"></i></button></th>-->
+                    </tr>
+                  </thead>
+                  <tbody class="profinfo">
+                    <tr class="profmidtr">
+                      <td>627 posts</td>
+                      <td>133 followers</td>
+                      <td>405 following</td>
+                    </tr>
+                    <tr class="profnametr">
+                      <td>{{user.username}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="profbiodiv">
+
+                  <p>{{user.bio}}</p>
+
+                </div>
+              </div>
+            </div>
+            <!--<div class="sidebuttons">
+              <div class="editbutton" [routerLink]="['/user/edit']"><button>Edit Profile</button></div>
+              <div class="editbutton" (click)="logout()"><button>Logout</button></div>
+              <div class="cog"><button><i class="fa fa-cog"></i></button></div>
+            </div>-->
+            <div class="hr2">
+              <hr />
+            </div>
+          <!--</div>-->
+        </div>
       </div>
     </div>
   </div>
-  <div class="hr2">
-    <hr />
-  </div>
-  <div class="photodiv">
-    <table class="phototb">
-      <tbody>
-        <tr class="phototr" *ngFor="let element of userImages">
-          <td><img [src]="element.medium"/></td>
-        </tr>        
-      </tbody>
-    </table>
-  </div>
-  <!--<div class="container-fluid">
-      <div class="row">
-          <div class="col-md-4">
-              <img src="/img/ph01.png" />
-          </div>
-          <div class="col-md-4">
-              <img src="/img/ph02.png" />
-          </div>
-          <div class="col-md-4">
-              <img src="/img/ph03.png" />
-          </div>
+  <div class="containerphoto">
+  <div class="row card-group">
+    <div class="col-4" *ngFor="let element of userImages">
+      <div>
+        <img class="imgclass" [src]="element.medium" />
       </div>
-  </div>-->
-</section>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+<!--<div class="photodiv">
+  <table class="phototb">
+    <tbody>
+      <tr class="phototr" *ngFor="let element of userImages">
+        <td><img [src]="element.medium" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>-->
+
+
+
+
+<!--<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="/img/ph01.png" />
+        </div>
+        <div class="col-md-4">
+            <img src="/img/ph02.png" />
+        </div>
+        <div class="col-md-4">
+            <img src="/img/ph03.png" />
+        </div>
+    </div>
+</div>-->

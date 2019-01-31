@@ -1,32 +1,43 @@
-<div class="container mt-5">
-  
-  <div *ngIf="loggedIn()">
-    <app-photo-list></app-photo-list>
-  </div>
-  <div *ngIf="!loggedIn()">
-  <div *ngIf="registerMode" class="container">
-    <div class="row justify-content-center">
-      <div class="col-4">
-        <app-register> </app-register>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row">
+
+        <div class="mx-auto">
+          <div class="card">
+
+            <div *ngIf="loggedIn()">
+              <app-photo-list></app-photo-list>
+            </div>
+            <div *ngIf="!loggedIn()">
+              <div *ngIf="registerMode" class="container">
+                <div class="row justify-content-center">
+                  <div class="col-4">
+                    <app-register> </app-register>
+                  </div>
+                </div>
+                <p class="lead"> Have an account? </p>
+                <div class="test-center">
+                  <button class="btn btn-outline-secondary" (click)="loginToggle()">Login</button>
+                </div>
+              </div>
+              <div>
+              </div>
+              <div *ngIf="!registerMode" style="text-align: center">
+                <div class="row justify-content-center">
+                  <div class="col-4">
+                    <app-login> </app-login>
+                  </div>
+                </div>
+                <p class="lead"> Don't have an account? </p>
+                <div class="test-center">
+                  <button class="btn btn-secondary" (click)="registerToggle()">Sign up</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <p class="lead"> Have an account? </p>
-    <div class="test-center">
-      <button class="btn btn-primary btn-lg mr-2" (click)="loginToggle()">Login</button>
-    </div>
   </div>
-  <div>
-  </div>
-  <div *ngIf="!registerMode" style="text-align: center">
-    <div class="row justify-content-center">
-      <div class="col-4">
-        <app-login> </app-login>
-      </div>
-    </div>
-    <p class="lead"> Don't have an account? </p>
-    <div class="test-center">
-      <button class="btn btn-primary btn-lg mr-2" (click)="registerToggle()">Sign up</button>
-    </div>   
-  </div>
-    </div>
 </div>

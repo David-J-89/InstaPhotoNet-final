@@ -1,0 +1,162 @@
+@import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../../../../node_modules/bootswatch/dist/pulse/bootstrap.min.css';
+
+.container-fluid {
+  padding-top: 120px;
+}
+
+
+
+  .container-fluid .row .col-md-12 .row .mx-auto .card {
+    margin: 0 auto;
+    width: 600px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    overflow: auto;
+  }
+
+    .container-fluid .row .col-md-12 .row .mx-auto .card .card-header {
+      background: white;
+      padding: 15px;
+      padding-top: 50px;
+    }
+
+      .container-fluid .row .col-md-12 .row .mx-auto .card .card-header .card-filter {
+        height: 40px;
+        width: 40px;
+        background: #FAFAFA;
+      }
+
+      .container-fluid .row .col-md-12 .row .mx-auto .card .card-header .profile-img {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        position: relative;
+        top: 3px;
+        margin-right: 5px;
+      }
+
+      .container-fluid .row .col-md-12 .row .mx-auto .card .card-header .profile-info {
+        background: white;
+        display: inline-block;
+      }
+
+        .container-fluid .row .col-md-12 .row .mx-auto .card .card-header .profile-info .name {
+          background: white;
+          font-size: 13px;
+          color: #262626;
+          font-weight: 700;
+          padding-left: 30px;
+          padding-top: 0px;
+        }
+
+      .container-fluid .row .col-md-12 .row .mx-auto .card .card-header .location {
+        font-size: 12px;
+        color: #262626;
+      }
+
+
+
+    .container-fluid .row .col-md-12 .row .mx-auto .card .content img {
+      width: 100%;
+    }
+
+    .container-fluid .row .col-md-12 .row .mx-auto .card .card-footer {
+      padding: 15px;
+      box-sizing: border-box;
+    }
+
+      .container-fluid .row .col-md-12 .row .mx-auto .card .card-footer .likes {
+        color: #262626;
+        font-size: 12px;
+        padding-bottom: 10px;
+      }
+
+      .container-fluid .row .col-md-12 .row .mx-auto .card .card-footer .description p {
+        font-size: 13px;
+        margin: 0;
+        padding: 0 0 5px 0;
+      }
+
+      .container-fluid .row .col-md-12 .row .mx-auto .card .card-footer .description .username {
+        font-weight: 700;
+      }
+
+      .container-fluid .row .col-md-12 .row .mx-auto .card .card-footer .comments p {
+        font-size: 14px;
+        margin: 0;
+        padding: 0 0 5px 0;
+        color: #474747;
+      }
+
+      .container-fluid .row .col-md-12 .row .mx-auto .card .card-footer .comments .username {
+        font-weight: 700;
+      }
+
+      .container-fluid .row .col-md-12 .row .mx-auto .card .card-footer hr {
+        padding: 0;
+        color: #EFEFEF;
+      }
+
+      .container-fluid .row .col-md-12 .row .mx-auto .card .card-footer form {
+        padding-top: 13px;
+      }
+
+      .container-fluid .row .col-md-12 .row .mx-auto .card .card-footer .fa {
+        font-size: 24px;
+      }
+
+      .container-fluid .row .col-md-12 .row .mx-auto .card .card-footer .heart {
+        display: inline-block;
+        width: 7%;
+        float: left;
+      }
+
+        .container-fluid .row .col-md-12 .row .mx-auto .card .card-footer .heart .fa {
+          position: relative;
+          top: 3px;
+        }
+
+      .container-fluid .row .col-md-12 .row .mx-auto .card .card-footer .comment1 {
+        display: inline-block;
+        width: 7%;
+      }
+
+        .container-fluid .row .col-md-12 .row .mx-auto .card .card-footer .comment1 .fa {
+          position: relative;
+          top: 2px;
+          left: 5px;
+        }
+
+      .container-fluid .row .col-md-12 .row .mx-auto .card .card-footer .time {
+        font-size: 10px;
+        float: left;
+        display: inline-block;
+        top: 10px;
+        position: relative;
+        color: #999999;
+      }
+
+      .container-fluid .row .col-md-12 .row .mx-auto .card .card-footer form .add-comment {
+        display: inline-block;
+        width: 70%;
+      }
+
+        .container-fluid .row .col-md-12 .row .mx-auto .card .card-footer form .add-comment input {
+          width: 100%;
+          padding: 5px;
+          font-weight: normal;
+          border: 0px solid #fff;
+        }
+
+      .container-fluid .row .col-md-12 .row .mx-auto .card .card-footer form .options {
+        display: inline-block;
+        width: 7%;
+        float: right;
+      }
+
+        .container-fluid .row .col-md-12 .row .mx-auto .card .card-footer form .options .fa {
+          position: relative;
+          top: 3px;
+        }
