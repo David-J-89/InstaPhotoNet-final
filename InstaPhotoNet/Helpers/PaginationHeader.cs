@@ -12,7 +12,7 @@ namespace InstaPhotoNet.Helpers
         public int TotalItems { get; set; }
         public int TotalPages { get; set; }
 
-        public PaginationHeader(int currentPage, int itemsPerPage, int totalItems, int totalPages)
+        public PaginationHeader(int currentPage, int itemsPerPage, int totalItems, int totalPages) //to be passed back in the http response header.
         {
             this.CurrentPage = currentPage;
             this.ItemsPerPage = itemsPerPage;

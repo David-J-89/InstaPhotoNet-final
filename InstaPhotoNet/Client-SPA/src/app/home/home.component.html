@@ -4,12 +4,11 @@
       <div class="row">
 
         <div class="mx-auto">
-          <div class="card">
-
-            <div *ngIf="loggedIn()">
-              <app-photo-list></app-photo-list>
-            </div>
-            <div *ngIf="!loggedIn()">
+          <div *ngIf="loggedIn()">
+            <app-photo-list></app-photo-list>
+          </div>
+          <div *ngIf="!loggedIn()">
+            <div class="card">
               <div *ngIf="registerMode" class="container">
                 <div class="row justify-content-center">
                   <div class="col-4">

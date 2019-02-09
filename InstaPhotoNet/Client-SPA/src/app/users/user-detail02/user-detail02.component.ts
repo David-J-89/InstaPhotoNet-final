@@ -55,7 +55,7 @@ export class UserDetail02Component implements OnInit {
 
   sendLike(id: number) {
     this.userService.sendLike(this.authService.decodedToken.nameid, id).subscribe(data => {
-      this.alertify.success('You have liked: ' + this.user.knownAs);
+      this.alertify.success('You have followed: ' + this.user.knownAs);
     }), error => {
       this.alertify.error(error);
     }

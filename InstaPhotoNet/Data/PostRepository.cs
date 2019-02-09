@@ -80,7 +80,7 @@ namespace InstaPhotoNet.Data
         public async Task<PagedList<User>> GetUsers(UserParams userParams)
         {
             var users = _context.Users.Include(p => p.Photos)
-                .OrderByDescending(u => u.LastActive).AsQueryable();
+                    .OrderByDescending(u => u.LastActive).AsQueryable();
 
             users = users.Where(u => u.Id != userParams.UserId);
 
@@ -95,16 +95,16 @@ namespace InstaPhotoNet.Data
                 var userLikees = await GetUserLikes(userParams.UserId, userParams.Likers);
                 users = users.Where(u => userLikees.Contains(u.Id));
             }
-
+            
             if (!string.IsNullOrEmpty(userParams.OrderBy))
             {
                 switch (userParams.OrderBy)
                 {
-                    case "created":
-                        users = users.OrderByDescending(u => u.Id);
+                    case "lastactive":
+                        users = users.OrderByDescending(u => u.LastActive);
                         break;
                     default:
-                        users = users.OrderByDescending(u => u.LastActive);
+                        users = users.OrderByDescending(u => u.Id);
                         break;
                 }
             }

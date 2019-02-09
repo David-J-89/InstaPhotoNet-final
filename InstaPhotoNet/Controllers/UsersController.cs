@@ -27,28 +27,14 @@ namespace InstaPhotoNet.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetUsers(UserParams userParams)
+        public async Task<IActionResult> GetUsers([FromQuery]UserParams userParams)
         {
-            //var users = await _repo.GetUsers();
-            //var usersToReturn = _mapper.Map<IEnumerable<UserForListDto>>(users);
-            //return Ok(usersToReturn);
+            var users = await _repo.GetUsers(userParams);
 
-            var currentUserId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+            var usersToReturn = _mapper.Map<IEnumerable<UserForListDto>>(users);
 
-            //var userFromRepo = await this._repo.GetUser(currentUserId);
-
-            userParams.UserId = currentUserId;
-
-            //if (string.IsNullOrEmpty(userParams.Gender))
-            //{
-            //    userParams.Gender = userFromRepo.Gender == "male" ? "female" : "male";
-            //}
-
-            var users = await this._repo.GetUsers(userParams);
-
-            var usersToReturn = this._mapper.Map<IEnumerable<UserForListDto>>(users);
-
-            Response.AddPagination(users.CurrentPage, users.PageSize, users.TotalCount, users.TotalPages);
+            Response.AddPagination(users.CurrentPage, users.PageSize,
+                users.TotalCount, users.TotalPages);
 
             return Ok(usersToReturn);
         }
@@ -97,7 +83,7 @@ namespace InstaPhotoNet.Controllers
             var like = await _repo.GetLike(id, recipientId);
 
             if (like != null)
-                return BadRequest("You already like this user");
+                return BadRequest("You already followed this user");
 
             if (await _repo.GetUser(recipientId) == null)
                 return NotFound();
@@ -113,7 +99,7 @@ namespace InstaPhotoNet.Controllers
             if (await _repo.SaveAll())
                 return Ok();
 
-            return BadRequest("Failed to like user");
+            return BadRequest("Failed to follow user");
         }
     }
 }

@@ -41,6 +41,7 @@ import { NavbootComponent } from './maintest/navboot/navboot.component';
 import { PhotoEditorbootComponent } from './maintest/photo-editorboot/photo-editorboot.component';
 import { PhotoUserdetailbootComponent } from './maintest/photo-userdetailboot/photo-userdetailboot.component';
 import { PhotoUsereditbootComponent } from './maintest/photo-usereditboot/photo-usereditboot.component';
+import { ListsResolver } from './_resolvers/lists.resolver';
 
 
 
@@ -101,7 +102,8 @@ export function tokenGetter() {
     UserListResolver,
     UserEditResolver,
     PreventUnsavedChanges,
-    PostService
+    PostService,
+    ListsResolver
   ],
   bootstrap: [AppComponent]
 })
