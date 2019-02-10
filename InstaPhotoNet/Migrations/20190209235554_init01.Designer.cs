@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InstaPhotoNet.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20190125212614_AddedLikeEntity")]
-    partial class AddedLikeEntity
+    [Migration("20190209235554_init01")]
+    partial class init01
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

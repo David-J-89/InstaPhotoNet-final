@@ -16,6 +16,7 @@ import { UserEdit02Component } from './users/user-edit02/user-edit02.component';
 import { PhotoUserdetailbootComponent } from './maintest/photo-userdetailboot/photo-userdetailboot.component';
 import { PhotoUsereditbootComponent } from './maintest/photo-usereditboot/photo-usereditboot.component';
 import { ListsResolver } from './_resolvers/lists.resolver';
+import { UseredittestComponent } from './useredittest/useredittest.component';
 
 
 
@@ -35,7 +36,7 @@ export const appRoutes: Routes = [
         resolve: { user: UserDetailResolver }
       },
       {
-        path: 'user/edit', component: UserEdit02Component,
+        path: 'user/edit', component: UseredittestComponent,
         resolve: { user: UserEditResolver }, canDeactivate: [PreventUnsavedChanges]
       },
       { path: 'messages', component: MessagesComponent },

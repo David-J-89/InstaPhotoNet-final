@@ -42,6 +42,7 @@ import { PhotoEditorbootComponent } from './maintest/photo-editorboot/photo-edit
 import { PhotoUserdetailbootComponent } from './maintest/photo-userdetailboot/photo-userdetailboot.component';
 import { PhotoUsereditbootComponent } from './maintest/photo-usereditboot/photo-usereditboot.component';
 import { ListsResolver } from './_resolvers/lists.resolver';
+import { UseredittestComponent } from './useredittest/useredittest.component';
 
 
 
@@ -72,6 +73,7 @@ export function tokenGetter() {
     PhotoEditorbootComponent,
     PhotoUserdetailbootComponent,
     PhotoUsereditbootComponent,
+    UseredittestComponent,
       
     
   ],
