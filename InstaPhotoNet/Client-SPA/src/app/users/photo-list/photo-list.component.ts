@@ -26,7 +26,7 @@ export class PhotoListComponent implements OnInit {
     this.postService.getPosts().subscribe((photos: Photo[]) => {
       this.photos = photos;
     }, error => {
-      this.alertify.error(error);
+      this.alertify.message(error);
     });
   }
 

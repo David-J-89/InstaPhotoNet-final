@@ -21,8 +21,6 @@ namespace InstaPhotoNet.Models
 
         public User User { get; set; }
 
-
-
         //public string UserKnownAs { get; set; }
 
         //public string UserName { get; set; }

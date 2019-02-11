@@ -28,10 +28,10 @@ export class LoginComponent implements OnInit {
   login() {
     this.authService.login(this.model).subscribe(
       next => {
-        this.alertify.success('Logged in successfully');
+        this.alertify.message('Logged in successfully');
       },
       error => {
-        this.alertify.error(error);
+        this.alertify.message(error);
       },
       () => {
         this.router.navigate(['/home']);

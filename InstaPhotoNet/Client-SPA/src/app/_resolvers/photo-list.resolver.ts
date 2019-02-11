@@ -15,7 +15,7 @@ export class PhotoListResolver implements Resolve<Photo[]> {
   resolve(route: ActivatedRouteSnapshot): Observable<Photo[]> {
     return this.postService.getPosts().pipe(
       catchError(error => {
-        this.alertify.error('Problem retrieving data');
+        this.alertify.message('Problem retrieving data');
         this.router.navigate(['/home']);
         return of(null);
       })

@@ -1,5 +1,5 @@
-@import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-@import '../../../node_modules/bootswatch/dist/pulse/bootstrap.min.css';
+/*@import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../../../node_modules/bootswatch/dist/pulse/bootstrap.min.css';*/
 
 .container-fluid {
   padding-top: 120px;
@@ -9,7 +9,7 @@
   .container-fluid .row .col-md-12 .row .mx-auto .profile {
     margin: 0 auto;
     width: 930px;
-    height: 280px;
+    height: inherit;
     background: #fafafa;
     /*border: 1px solid #e6e6e6;
 border-radius: 2px;*/
@@ -73,10 +73,12 @@ border-radius: 2px;*/
 .container-fluid .row .col-md-12 .row .mx-auto .card .hr2 {
   margin: 0 auto;
   width: 930px;
+  
 }
 
 .container-fluid .containerphoto {
   width: 930px;
+  
 }
 
 .container-fluid .row .col-4 .imgclass {
@@ -85,4 +87,16 @@ border-radius: 2px;*/
   width: 290px;
   margin-left: 340px;
   padding-bottom: 11px;
+  
 }
+
+.container-fluid .row .photocont {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/*.photocont {
+  margin-left: 420px;
+  /*margin-right: 0px;*/
+  /*text-align: center;*/
+/*}*/

@@ -24,7 +24,7 @@
                     <th (click)="logout()"><button type="button" class="btn btn-outline-secondary">Logout</button></th>
                     <th><button type="button" class="btn btn-outline-secondary"><i class="fa fa-cog"></i></button></th>
                     <!--<th class="editbutton" (click)="logout()"><button>Logout</button></th>
-                  <th class="cog"><button><i class="fa fa-cog"></i></button></th>-->
+          <th class="cog"><button><i class="fa fa-cog"></i></button></th>-->
                   </tr>
                 </thead>
                 <tbody class="profinfo">
@@ -45,6 +45,24 @@
 
               </div>
             </div>
+            <div class="container2">
+              <form #editForm="ngForm" id="editForm" (ngSubmit)="updateUser()">
+                <h4>Bio</h4>
+                <textarea name="bio" rows="6" class="form-control"
+                          [(ngModel)]="user.bio"></textarea>
+                <h4>Location Details:</h4>
+                <div class="form-inline">
+                  <label for="city">City</label>
+                  <input class="form-control" type="text" name="city" [(ngModel)]="user.city" />
+                  <label for="country">Country</label>
+                  <input class="form-control" type="text" name="country" [(ngModel)]="user.country" />
+                </div>
+                <hr />
+                <div class="">
+                  <button [disabled]="!editForm.dirty" form="editForm" class="btn btn-success btn-block">Save Changes</button>
+                </div>
+              </form>
+            </div>
           </div>
           <!--<div class="sidebuttons">
           <div class="editbutton" [routerLink]="['/user/edit']"><button>Edit Profile</button></div>
@@ -58,29 +76,17 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6">          
-          <div class="">
-            <form #editForm="ngForm" id="editForm" (ngSubmit)="updateUser()">
-              <h4>Bio</h4>
-              <textarea name="bio" rows="6" class="form-control"
-                        [(ngModel)]="user.bio"></textarea>
-              <h4>Location Details:</h4>
-              <div class="form-inline">
-                <label for="city">City</label>
-                <input class="form-control" type="text" name="city" [(ngModel)]="user.city" />
-                <label for="country">Country</label>
-                <input class="form-control" type="text" name="country" [(ngModel)]="user.country" />
-              </div>
-              <hr />
-              <div class="">
-                <button [disabled]="!editForm.dirty" form="editForm" class="btn btn-success btn-block">Save Changes</button>
-              </div>
-            </form>
-            </div>
-          </div>
-            <div class="col-md-6">
+   
+        <!--<div class="col-md-6">
+
+         
+
+
+
+
+          </div>-->
+        <div class="photocont">
+            <div class="col-md-12">
               <div class="">
                 <app-photo-editor [photos]="user.photos"
                                   (getMemberPhotoChange)="updateProfilePhoto($event)"></app-photo-editor>
@@ -88,9 +94,8 @@
               </div>
 
             </div>
-
           </div>
-        </div>
+         
       </div>
     </div>
 

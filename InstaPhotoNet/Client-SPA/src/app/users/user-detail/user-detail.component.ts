@@ -98,9 +98,9 @@ export class UserDetailComponent implements OnInit {
 
   sendLike(id: number) {
     this.userService.sendLike(this.authService.decodedToken.nameid, id).subscribe(data => {
-      this.alertify.success('You have liked: ' + this.user.knownAs);
+      this.alertify.message('You have liked: ' + this.user.knownAs);
     }), error => {
-      this.alertify.error(error);
+      this.alertify.message(error);
     }
   }
 

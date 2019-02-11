@@ -34,10 +34,10 @@ export class UserEdit02Component implements OnInit {
 
   updateUser() {
     this.userService.updateUser(this.authService.decodedToken.nameid, this.user).subscribe(next => {
-      this.alertify.success('Profile updated successfully!');
+      this.alertify.message('Profile updated successfully!');
       this.editForm.reset(this.user);
     }, error => {
-      this.alertify.error(error);
+      this.alertify.message(error);
     });
   }
 

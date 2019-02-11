@@ -65,7 +65,8 @@ export class PhotoEditorComponent implements OnInit {
           isProfile: res.isProfile,
           userId: res.userId,
           userKnownAs: res.userKnownAs,
-          userPhotoUrl: res.userPhotoUrl
+          userPhotoUrl: res.userPhotoUrl,
+          userUserName: res.userUserName
           
         };
         this.photos.push(photo);
@@ -97,7 +98,7 @@ export class PhotoEditorComponent implements OnInit {
           );
         },
         error => {
-          this.alertify.error(error);
+          this.alertify.message(error);
         }
       );
   }
@@ -109,10 +110,10 @@ export class PhotoEditorComponent implements OnInit {
         .subscribe(
           () => {
             this.photos.splice(this.photos.findIndex(p => p.id === id), 1);
-            this.alertify.success('Photo has been deleted');
+            this.alertify.message('Photo has been deleted');
           },
           error => {
-            this.alertify.error('Failed to delete the photo');
+            this.alertify.message('Failed to delete the photo');
           }
         );
     });
