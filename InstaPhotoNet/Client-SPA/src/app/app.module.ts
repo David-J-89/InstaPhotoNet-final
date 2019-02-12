@@ -42,6 +42,7 @@ import { PhotoUserdetailbootComponent } from './maintest/photo-userdetailboot/ph
 import { PhotoUsereditbootComponent } from './maintest/photo-usereditboot/photo-usereditboot.component';
 import { ListsResolver } from './_resolvers/lists.resolver';
 import { UseredittestComponent } from './useredittest/useredittest.component';
+import { NavdropdownComponent } from './navdropdown/navdropdown.component';
 
 
 
@@ -73,6 +74,7 @@ export function tokenGetter() {
     PhotoUserdetailbootComponent,
     PhotoUsereditbootComponent,
     UseredittestComponent,
+    NavdropdownComponent,
       
     
   ],

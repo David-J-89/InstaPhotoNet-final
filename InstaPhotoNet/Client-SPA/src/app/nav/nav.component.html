@@ -5,20 +5,21 @@
     <a [routerLink]="['/home']"><i class="fa fa-home" aria-hidden="true"></i></a>
     <a [routerLink]="['/users']"><i class="fa fa-search" aria-hidden="true"></i></a>
     <a href="likes.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-    <!--<div class="dropdown show">-->
-      <a class="nav-link dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <div class="dropdown show">
+      <a class="dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
         <i class="fa fa-user-o" ></i>
         </a>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
         <a class="dropdown-item" [routerLink]="['/users', userId]">My Profile</a>
         <a class="dropdown-item" [routerLink]="['/user/edit']">Edit Profile</a>
+      </div>     
       </div>
-       
-
     <!--<a [routerLink]="['/users', userId]"><i class="fa fa-user-o" aria-hidden="true"></i></a>
     <a [routerLink]="['/user/edit']"><i class="fa fa-cog" aria-hidden="true"></i></a>-->
   </header>
 </div>
+
+
 
 
 
