@@ -23,10 +23,9 @@ namespace InstaPhotoNet.Controllers
         [HttpGet]
         public async Task<IActionResult> GetPhotos()
         {
-            var photos = await _repo.GetPhotos();
-            //var result = photos.(x => new PhotoForReturnDto(x)).ToListAsync();
+            var photos = await _repo.GetPhotos();            
 
-            var postsToReturn = _mapper.Map<IEnumerable<PhotoForReturnDto>>(photos);
+          var postsToReturn = _mapper.Map<IEnumerable<PhotoForReturnDto>>(photos);
 
             return Ok(postsToReturn);
 

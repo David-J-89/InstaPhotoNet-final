@@ -24,10 +24,8 @@ import { AuthGuard } from './_guards/auth.guard';
 import { UserService } from './_services/user.service';
 import { UsersComponent } from './users/users.component';
 import { UserCardComponent } from './users/user-card/user-card.component';
-import { UserDetailComponent } from './users/user-detail/user-detail.component';
 import { UserDetailResolver } from './_resolvers/user-detail.resolver';
 import { UserListResolver } from './_resolvers/user-list.resolver';
-import { UserEditComponent } from './users/user-edit/user-edit.component';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { UserEditResolver } from './_resolvers/user-edit.resolver';
 import { PhotoEditorComponent } from './users/photo-editor/photo-editor.component';
@@ -35,14 +33,10 @@ import { PostService } from './_services/post.service';
 import { PhotoListComponent } from './users/photo-list/photo-list.component';
 import { LoginComponent } from './login/login.component';
 import { UserDetail02Component } from './users/user-detail02/user-detail02.component';
-import { UserEdit02Component } from './users/user-edit02/user-edit02.component';
-import { NavbootComponent } from './maintest/navboot/navboot.component';
-import { PhotoEditorbootComponent } from './maintest/photo-editorboot/photo-editorboot.component';
-import { PhotoUserdetailbootComponent } from './maintest/photo-userdetailboot/photo-userdetailboot.component';
-import { PhotoUsereditbootComponent } from './maintest/photo-usereditboot/photo-usereditboot.component';
 import { ListsResolver } from './_resolvers/lists.resolver';
 import { UseredittestComponent } from './useredittest/useredittest.component';
-import { NavdropdownComponent } from './navdropdown/navdropdown.component';
+import { UserOwnProfileComponent } from './user-own-profile/user-own-profile.component';
+import { UserEditComponent } from './users/user-edit/user-edit.component';
 
 
 
@@ -60,21 +54,14 @@ export function tokenGetter() {
     NavComponent,
     RegisterComponent,
     UserCardComponent,
-    UserDetailComponent,
-    UserEditComponent,
     UserListComponent,   
     PhotoEditorComponent,
     PhotoListComponent,
     LoginComponent,
-    
+    UserEditComponent,
     UserDetail02Component,
-    UserEdit02Component,
-    NavbootComponent,
-    PhotoEditorbootComponent,
-    PhotoUserdetailbootComponent,
-    PhotoUsereditbootComponent,
     UseredittestComponent,
-    NavdropdownComponent,
+    UserOwnProfileComponent,
       
     
   ],

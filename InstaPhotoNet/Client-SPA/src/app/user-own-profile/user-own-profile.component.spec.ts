@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavdropdownComponent } from './navdropdown.component';
+import { UserOwnProfileComponent } from './user-own-profile.component';
 
-describe('NavdropdownComponent', () => {
-  let component: NavdropdownComponent;
-  let fixture: ComponentFixture<NavdropdownComponent>;
+describe('UserOwnProfileComponent', () => {
+  let component: UserOwnProfileComponent;
+  let fixture: ComponentFixture<UserOwnProfileComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NavdropdownComponent ]
+      declarations: [ UserOwnProfileComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NavdropdownComponent);
+    fixture = TestBed.createComponent(UserOwnProfileComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

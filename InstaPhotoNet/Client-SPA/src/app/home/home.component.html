@@ -4,7 +4,8 @@
       <div class="row">
 
         <div class="mx-auto">
-          <div *ngIf="loggedIn()">         
+          <div *ngIf="loggedIn()">
+            <h1>InstaPhotoNet</h1>
             <app-photo-list></app-photo-list>
           </div>
           <div *ngIf="!loggedIn()">
@@ -19,10 +20,8 @@
                 <div class="test-center">
                   <button class="btn btn-outline-secondary" (click)="loginToggle()">Login</button>
                 </div>
-              </div>
-              <div>
-              </div>
-              <div *ngIf="!registerMode" style="text-align: center">
+              </div>              
+              <div *ngIf="!registerMode" style="text-align: center">                
                 <div class="row justify-content-center">
                   <div class="col-4">
                     <app-login> </app-login>

@@ -8,7 +8,7 @@ import { AuthService } from '../_services/auth.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  registerMode = true;  
+  registerMode = false;  
 
 
   constructor(private http: HttpClient, public authService: AuthService) { }

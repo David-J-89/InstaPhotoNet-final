@@ -78,14 +78,14 @@ border-radius: 2px;*/
   width: 930px;
 }
 
-.container-fluid .containerphoto {
+.container-fluid .card {
   width: 930px;
 }
 .container-fluid .row .col-4 .imgclass {
   display: inline-block;
   height: 290px;
   width: 290px; 
-  margin-left: 340px;
+  /*margin-left: 340px;*/
   padding-bottom: 11px;
   
   

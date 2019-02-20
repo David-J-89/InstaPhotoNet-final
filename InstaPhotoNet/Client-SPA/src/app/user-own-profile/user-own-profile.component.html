@@ -15,10 +15,9 @@
                   <thead class="profthead">
                     <tr class="proftoptr">
                       <th class="username">{{user.knownAs}}</th>
-                      <!--<th class="editbutton" [routerLink]="['/user/edit']"><button>Edit Profile</button></th>-->
-                      <th (click)="sendLike(user.id)"><button type="button" class="btn btn-secondary">Follow User</button></th>
+                      <th class="editbutton" [routerLink]="['/user/edit']"><button>Edit Profile</button></th>                     
                       <th (click)="logout()"><button type="button" class="btn btn-outline-secondary">Logout</button></th>
-                      <th><button type="button" class="btn btn-outline-secondary"><i class="fa fa-cog"></i></button></th>
+                      <!-- <th><button type="button" class="btn btn-outline-secondary"><i class="fa fa-cog"></i></button></th> -->
                       <!--<th class="editbutton" (click)="logout()"><button>Logout</button></th>
                       <th class="cog"><button><i class="fa fa-cog"></i></button></th>-->
                     </tr>
@@ -68,6 +67,7 @@
     </div>
     </div>
   </div>
+
 
 
 

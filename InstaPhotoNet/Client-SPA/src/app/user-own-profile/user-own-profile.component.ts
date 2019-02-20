@@ -1,20 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../../_services/user.service';
+import { UserService } from '../_services/user.service';
+import { AlertifyService } from '../_services/alertify.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AuthService } from '../../_services/auth.service';
-import { AlertifyService } from '../../_services/alertify.service';
-import { User } from '../../_models/user';
+import { AuthService } from '../_services/auth.service';
+import { User } from '../_models/user';
 
 @Component({
-  selector: 'app-photo-userdetailboot',
-  templateUrl: './photo-userdetailboot.component.html',
-  styleUrls: ['./photo-userdetailboot.component.css']
+  selector: 'app-user-own-profile',
+  templateUrl: './user-own-profile.component.html',
+  styleUrls: ['./user-own-profile.component.css']
 })
-export class PhotoUserdetailbootComponent implements OnInit {
-  user: User;
+export class UserOwnProfileComponent implements OnInit {
+  user: User;  
   userImages: string[];
-
-
+  
+  
 
   constructor(private userService: UserService, private alertify: AlertifyService,
     private route: ActivatedRoute, private authService: AuthService, private router: Router) { }
@@ -22,7 +22,7 @@ export class PhotoUserdetailbootComponent implements OnInit {
   ngOnInit() {
     this.route.data.subscribe(data => {
       this.user = data['user'];
-
+      
     });
 
     this.userImages = this.getImages();
@@ -55,7 +55,7 @@ export class PhotoUserdetailbootComponent implements OnInit {
 
   sendLike(id: number) {
     this.userService.sendLike(this.authService.decodedToken.nameid, id).subscribe(data => {
-      this.alertify.message('You have liked: ' + this.user.knownAs);
+      this.alertify.message('You have followed: ' + this.user.knownAs);
     }), error => {
       this.alertify.message(error);
     }

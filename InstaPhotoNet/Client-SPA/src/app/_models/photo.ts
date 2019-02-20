@@ -7,7 +7,8 @@ export interface Photo {
   userId: number;
   userKnownAs: string;
   userPhotoUrl: string;
-  userUserName: string;  
+  userUserName: string; 
+  comments?: Comment[]; 
   
 }
 

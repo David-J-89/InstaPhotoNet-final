@@ -1,8 +1,10 @@
 ﻿using InstaPhotoNet.Helpers;
 using InstaPhotoNet.Models;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace InstaPhotoNet.Data
@@ -10,6 +12,7 @@ namespace InstaPhotoNet.Data
     public class PostRepository : IPostRepository
     {
         private readonly DataContext _context;
+        
 
         public PostRepository(DataContext context)
         {
@@ -26,11 +29,11 @@ namespace InstaPhotoNet.Data
             _context.Remove(entity);
         }
 
-        public IQueryable<Comment> GetCommentsByPhoto(int photoId)
-        {
-            var commentsbphoto = _context.Comments.Where(r => r.PhotoId == photoId);
-            return commentsbphoto;
-        }
+        //public async Task<IEnumerable<Comment>> GetCommentsByPhoto(int photoId)
+        //{
+        //    var commentsbphoto = await _context.Comments.Where(r => r.PhotoId == photoId).ToListAsync();
+        //    return commentsbphoto;
+        //}
 
         public async Task<Like> GetLike(int userId, int recipientId)
         {
@@ -48,11 +51,21 @@ namespace InstaPhotoNet.Data
         public async Task<IEnumerable<Photo>> GetPhotos()
         {
             //var photos = await _context.Photos.Include(c => c.Comments).ToListAsync();
-            var photos = await _context.Photos.Include(c => c.User).ToListAsync();
+            //var photos = await _context.Photos.Where(u => u.IsProfile == false)
+            //.Include(c => c.User)
+            //.Include(m => m.Comments)
+            //.OrderByDescending(p => p.Id)
+            //.ToListAsync();
+
+            //return photos; 
+
+            var photos = await _context.Photos//.Where(u => u.IsProfile == false)
+           .Include(c => c.User)
+           .Include(c => c.Comments)
+           .OrderByDescending(p => p.Id)
+           .ToListAsync();
 
             return photos;
-
-           
 
         }
 
@@ -135,6 +148,7 @@ namespace InstaPhotoNet.Data
         {
             return await _context.SaveChangesAsync() > 0;
         }
+       
 
         //Task<IEnumerable<Comment>> IPostRepository.GetCommentsByPhoto(int photoId)
         //{

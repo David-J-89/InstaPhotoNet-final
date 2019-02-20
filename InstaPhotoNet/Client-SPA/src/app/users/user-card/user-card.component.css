@@ -1,5 +1,7 @@
 
-
+.card {
+  width: 290px;
+}
 .card .card-img-wrapper .card-img-top {
   display: inline-block;
   height: 290px;

@@ -5,7 +5,7 @@
   padding-top: 120px;
 }
 
-
+@media (min-width: 1001) {
   .container-fluid .row .col-md-12 .row .mx-auto .profile {
     margin: 0 auto;
     width: 930px;
@@ -15,6 +15,25 @@
 border-radius: 2px;*/
     overflow: auto;
   }
+}
+
+@media (max-width: 1000) {
+  .container-fluid .row .col-md-12 .row .mx-auto .profile {
+    margin: 0 auto;
+    width: 320px;
+    height: inherit;
+    background: #fafafa;
+    /*border: 1px solid #e6e6e6;
+border-radius: 2px;*/
+    overflow: auto;
+  }
+}
+
+
+
+
+
+
 
     .container-fluid .row .col-md-12 .row .mx-auto .profile .profile-img {
       display: inline-block;

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace InstaPhotoNet.Dtos
 {
@@ -14,6 +15,7 @@ namespace InstaPhotoNet.Dtos
         public string UserKnownAs { get; set; }
         public string UserUserName { get; set; }
         public string UserPhotoUrl { get; set; }
+        public ICollection<CommentDto> Comments { get; set; }
         
 
     }

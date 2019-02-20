@@ -9,16 +9,17 @@
     "Country": "Gambia",
     "Photos": [
       {
-        "url": "https://randomuser.me/api/portraits/women/25.jpg",
+        "url": "https://randomuser.me/api/portraits/women/56.jpg",
         "isProfile": true,
-        "description": "Commodo deserunt consectetur officia ullamco minim deserunt commodo reprehenderit qui do commodo."
+        "description": "Commodo deserunt consectetur officia ullamco minim deserunt commodo reprehenderit qui do commodo.",
+        "Comments": [
+          {
+            "body":  "Hello Great Pic!, Where are you at?"
+          }
+        ]
       }
     ],
-    "Comments": [
-      {
-        "body":  "Hello Great Pic!, Where are you at?"
-      }
-    ]
+    
   },
   {
     "Username": "Keri",
@@ -53,108 +54,7 @@
       }
     ]
   },
-  {
-    "Username": "Elnora",
-    "Password": "password",
-    "KnownAs": "Elnora",
-    "LastActive": "2018-04-11",
-    "Bio": "Sit enim adipisicing elit pariatur anim nulla cupidatat quis enim ad pariatur.",
-    "City": "Skyland",
-    "Country": "Taiwan",
-    "Photos": [
-      {
-        "url": "https://randomuser.me/api/portraits/women/4.jpg",
-        "isProfile": true,
-        "description": "Et sint culpa veniam proident consectetur pariatur et esse anim fugiat aliqua commodo consequat voluptate."
-      }
-    ]
-  },
-  {
-    "Username": "Sharlene",
-    "Password": "password",
-    "KnownAs": "Sharlene",
-    "LastActive": "2018-11-28",
-    "Bio": "In veniam cillum eu sint culpa amet laborum sunt laborum deserunt proident ut reprehenderit.",
-    "City": "Nutrioso",
-    "Country": "Croatia (Hrvatska)",
-    "Photos": [
-      {
-        "url": "https://randomuser.me/api/portraits/women/72.jpg",
-        "isProfile": true,
-        "description": "Cupidatat dolor adipisicing proident ipsum est ex.",
-        "Comments": [
-          {
-            "body": "Hello Great Pic!, Where are you at?"
-          }
-        ]
-      }
-    ]
-    
-  },
-  {
-    "Username": "Jolene",
-    "Password": "password",
-    "KnownAs": "Jolene",
-    "LastActive": "2018-10-08",
-    "Bio": "Aute mollit nulla consequat ut excepteur.",
-    "City": "Thatcher",
-    "Country": "Mongolia",
-    "Photos": [
-      {
-        "url": "https://randomuser.me/api/portraits/women/80.jpg",
-        "isProfile": true,
-        "description": "Deserunt aute minim labore aute minim."
-      }
-    ]
-  },
-  {
-    "Username": "Rosie",
-    "Password": "password",
-    "KnownAs": "Rosie",
-    "LastActive": "2019-02-13",
-    "Bio": "Dolore minim aliquip culpa est minim occaecat reprehenderit amet ullamco consectetur.",
-    "City": "Bend",
-    "Country": "Turks and Caicos Islands",
-    "Photos": [
-      {
-        "url": "https://randomuser.me/api/portraits/women/3.jpg",
-        "isProfile": true,
-        "description": "Sit incididunt eiusmod commodo est."
-      }
-    ]
-  },
-  {
-    "Username": "Sheri",
-    "Password": "password",
-    "KnownAs": "Sheri",
-    "LastActive": "2018-12-20",
-    "Bio": "Nostrud quis sunt non in nisi consectetur dolore do irure in.",
-    "City": "Castleton",
-    "Country": "Belize",
-    "Photos": [
-      {
-        "url": "https://randomuser.me/api/portraits/women/55.jpg",
-        "isProfile": true,
-        "description": "Dolor labore ad eiusmod consequat irure proident quis."
-      }
-    ]
-  },
-  {
-    "Username": "Leonor",
-    "Password": "password",
-    "KnownAs": "Leonor",
-    "LastActive": "2018-10-18",
-    "Bio": "Lorem incididunt tempor ipsum amet labore voluptate do eu mollit excepteur labore.",
-    "City": "Salvo",
-    "Country": "East Timor",
-    "Photos": [
-      {
-        "url": "https://randomuser.me/api/portraits/women/38.jpg",
-        "isProfile": true,
-        "description": "Aliqua quis qui nulla amet Lorem duis ut excepteur Lorem amet elit magna ipsum."
-      }
-    ]
-  },
+ 
   {
     "Username": "Katheryn",
     "Password": "password",
@@ -395,39 +295,7 @@
           "description": "Fugiat reprehenderit in duis fugiat pariatur consequat anim."
         }
       ]
-    },
-    {
-      "Username": "Owen",
-      "Password": "password",
-      "KnownAs": "Owen",
-      "LastActive": "2018-12-05",
-      "Bio": "Ex ut fugiat aute reprehenderit labore est adipisicing.",
-      "City": "Soham",
-      "Country": "El Salvador",
-      "Photos": [
-        {
-          "url": "https://randomuser.me/api/portraits/men/65.jpg",
-          "isProfile": true,
-          "description": "Magna id velit ad quis ex do ea sit nisi Lorem exercitation."
-        }
-      ]
-    },
-    {
-      "Username": "England",
-      "Password": "password",
-      "KnownAs": "England",
-      "LastActive": "2018-06-20",
-      "Bio": "Consectetur duis labore in consequat ipsum duis veniam enim minim irure exercitation adipisicing dolor.",
-      "City": "Reinerton",
-      "Country": "Guadeloupe",
-      "Photos": [
-        {
-          "url": "https://randomuser.me/api/portraits/men/32.jpg",
-          "isProfile": true,
-          "description": "Sint nisi ipsum dolore dolor duis non quis cillum laboris reprehenderit dolore voluptate pariatur."
-        }
-      ]
-    },
+    },  
     {
       "Username": "Smith",
       "Password": "password",
@@ -443,54 +311,5 @@
           "description": "Sit et adipisicing dolor do voluptate sunt nostrud do sint."
         }
       ]
-    },
-    {
-      "Username": "Ware",
-      "Password": "password",
-      "KnownAs": "Ware",
-      "LastActive": "2018-03-17",
-      "Bio": "Lorem occaecat ut duis elit aliquip tempor commodo consequat nostrud amet ipsum qui labore.",
-      "City": "Drummond",
-      "Country": "Kuwait",
-      "Photos": [
-        {
-          "url": "https://randomuser.me/api/portraits/men/3.jpg",
-          "isProfile": true,
-          "description": "Ut culpa ad mollit sunt amet officia in adipisicing mollit incididunt aute nulla."
-        }
-      ]
-    },
-    {
-      "Username": "Armstrong",
-      "Password": "password",
-      "KnownAs": "Armstrong",
-      "LastActive": "2018-01-02",
-      "Bio": "Sint sunt proident irure et officia qui reprehenderit esse occaecat pariatur nisi.",
-      "City": "Maybell",
-      "Country": "Algeria",
-      "Photos": [
-        {
-          "url": "https://randomuser.me/api/portraits/men/56.jpg",
-          "isProfile": true,
-          "description": "Esse reprehenderit quis ut cupidatat sit."
-        }
-      ]
-    },
-    {
-      "Username": "Craig",
-      "Password": "password",
-      "KnownAs": "Craig",
-      "LastActive": "2018-04-17",
-      "Bio": "Sint ad culpa non consectetur aute enim.",
-      "City": "Macdona",
-      "Country": "Spain",
-      "Photos": [
-        {
-          "url": "https://randomuser.me/api/portraits/men/18.jpg",
-          "isProfile": true,
-          "description": "Tempor ullamco exercitation pariatur cupidatat in quis elit minim reprehenderit incididunt."
-        }
-      ]
-    }
-  
+    }  
 ]

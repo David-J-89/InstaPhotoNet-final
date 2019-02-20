@@ -2,11 +2,12 @@
 @import '../../../../node_modules/bootswatch/dist/pulse/bootstrap.min.css';*/
 
 .container-fluid {
-  padding-top: 120px;
+  padding-top: 40px;
 }
 
 
 
+@media (min-width: 1001) {
   .container-fluid .row .col-md-12 .row .mx-auto .card {
     margin: 0 auto;
     width: 600px;
@@ -14,6 +15,17 @@
     border-radius: 2px;
     overflow: auto;
   }
+}
+
+@media (max-width: 1000) {
+  .container-fluid .row .col-md-12 .row .mx-auto .card {
+    margin: 0 auto;
+    width: 320px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    overflow: auto;
+  }
+}
 
     .container-fluid .row .col-md-12 .row .mx-auto .card .card-header {
       background: white;
@@ -29,8 +41,8 @@
 
       .container-fluid .row .col-md-12 .row .mx-auto .card .card-header .profile-img {
         display: inline-block;
-        height: 30px;
-        width: 30px;
+        height: 40px;
+        width: 40px;
         border-radius: 50%;
         position: relative;
         top: 3px;
@@ -44,7 +56,7 @@
 
         .container-fluid .row .col-md-12 .row .mx-auto .card .card-header .profile-info .name {
           background: white;
-          font-size: 13px;
+          font-size: 14px;
           color: #262626;
           font-weight: 700;
           padding-left: 30px;

@@ -12,6 +12,7 @@ import { PhotoListComponent } from './users/photo-list/photo-list.component';
 import { UserDetail02Component } from './users/user-detail02/user-detail02.component';
 import { ListsResolver } from './_resolvers/lists.resolver';
 import { UseredittestComponent } from './useredittest/useredittest.component';
+import { UserOwnProfileComponent } from './user-own-profile/user-own-profile.component';
 
 
 
@@ -34,13 +35,15 @@ export const appRoutes: Routes = [
         path: 'user/edit', component: UseredittestComponent,
         resolve: { user: UserEditResolver }, canDeactivate: [PreventUnsavedChanges]
       },
+      {
+        path: 'user', component: UserOwnProfileComponent,
+        resolve: {user: UserEditResolver }
+      },
       { path: 'messages', component: MessagesComponent },
       { path: 'lists', component: ListsComponent },
-      { path: 'posts', component: PhotoListComponent },      
-      
+      { path: 'posts', component: PhotoListComponent },
       { path: 'lists', component: ListsComponent, resolve: { users: ListsResolver } },
 
-      
     ]
   },
   { path: '**', redirectTo: '', pathMatch: 'full' },

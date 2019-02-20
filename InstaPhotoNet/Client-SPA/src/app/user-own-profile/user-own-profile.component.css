@@ -1,0 +1,95 @@
+/*@import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../../../../node_modules/bootswatch/dist/pulse/bootstrap.min.css';*/
+
+.container-fluid {
+    padding-top: 120px;
+  }
+  
+  
+    .container-fluid .row .col-md-12 .row .mx-auto .profile {
+      margin: 0 auto;
+      width: 930px;
+      height: 280px;
+      background: #fafafa;
+      /*border: 1px solid #e6e6e6;
+  border-radius: 2px;*/
+      overflow: auto;
+    }
+  
+      .container-fluid .row .col-md-12 .row .mx-auto .profile .profile-img {
+        display: inline-block;
+        height: 155px;
+        width: 155px;
+        border-radius: 50%;
+        position: relative;
+        top: 3px;
+        margin-right: 5px;
+        margin-left: 10px;
+        margin-top: 20px;
+      }
+  
+      .container-fluid .row .col-md-12 .row .mx-auto .profile .profile-header {
+        padding-left: 300px;
+        margin-top: -120px;
+      }
+  
+        .container-fluid .row .col-md-12 .row .mx-auto .card .profile .profile-header .profile-top .name {
+          
+        }
+  
+        .container-fluid .row .col-md-12 .row .mx-auto .card .profile .profile-header .profheadcont {
+          
+        }
+  
+        .container-fluid .row .col-md-12 .row .mx-auto .card .profile .profile-header .profbiodiv {
+          /*padding: 40px;*/
+        }
+  
+  .container .profile .profile-header .profheadcont .profthead {
+    
+  }
+  
+  .container .profile .profile-header .profheadcont .proftoptr {
+  }
+  
+    .container .profile .profile-header .profheadcont .proftoptr .username {
+    }
+  
+    .container .profile .profile-header .profheadcont .proftoptr .editbutton {
+    }
+  
+    .container .profile .profile-header .profheadcont .proftoptr .cog {
+    }
+  
+  .container .profile .profile-header .profheadcont .profinfo {
+  }
+  
+    .container .profile .profile-header .profheadcont .profinfo .profmidtr {
+    }
+  
+    .container .profile .profile-header .profheadcont .profinfo .profnametr {
+    }
+  
+    .container .profile .profile-header .profheadcont .profinfo .profbiotr {
+    }
+  
+  .container-fluid .row .col-md-12 .row .mx-auto .card .hr2 {
+    margin: 0 auto;
+    width: 930px;
+  }
+  
+  .container-fluid .card {
+    width: 930px;
+  }
+  .container-fluid .row .col-4 .imgclass {
+    display: inline-block;
+    height: 290px;
+    width: 290px; 
+    /*margin-left: 340px;*/
+    padding-bottom: 11px;
+    
+    
+    
+  }
+  
+  

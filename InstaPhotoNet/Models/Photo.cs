@@ -19,20 +19,9 @@ namespace InstaPhotoNet.Models
 
         public int UserId { get; set; }
 
-        public User User { get; set; }
-
-        //public string UserKnownAs { get; set; }
-
-        //public string UserName { get; set; }
+        public User User { get; set; }      
 
         public ICollection<Comment> Comments { get; set; }
-
-
-
-
-
-        //public string UserKnownAs { get; set; }
-
 
         //public int NetLikeCount { get; set; }
 

@@ -28,6 +28,6 @@ namespace InstaPhotoNet.Data
 
         Task<IEnumerable<Photo>> GetPhotosIncludingComments();
 
-        //Task<IEnumerable<Comment>> GetCommentsByPhoto(int photoId);
+       // Task<IEnumerable<Comment>> GetCommentsByPhoto(int photoId);
     }
 }

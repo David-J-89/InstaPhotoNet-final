@@ -68,6 +68,7 @@ export class PhotoEditorComponent implements OnInit {
           userPhotoUrl: res.userPhotoUrl,
           userUserName: res.userUserName
           
+          
         };
         this.photos.push(photo);
         if (photo.isProfile) {
